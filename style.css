@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    font-family: cursive;
+    margin: 20px;
+    color: white;
+}
+.score{
+    text-align: center;
+    font-size: 2rem;
+    font-family: cursive;
+    margin: 20px;
+    color: white;
+}
+.hidden{
+    visibility: hidden;
+}
+.play{
+    display : block;
+    margin: 0px auto;
+    padding: 10px 20px;
+    font-size: 3.5rem;
+    font-family: cursive;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+.grid-container{
+    margin: 90px auto;
+    width: 25vw;
+    height: 45vh;
+    display : grid;
+    grid-template-rows  : 1fr 1fr;
+    grid-template-columns : 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 25px;
+}
+.item{
+    place-self: center;
+}
+.image{
+    height: 12vw;
+    width: 12vw;
+    border-radius: 10px;
+}
+.clicked{
+    opacity: 0.9;
+    box-shadow: 0 3px 4px 0 white;
+}
+.done{
+    border: 5px solid white;
+}
+.text-green{
+    color: greenyellow;
+}
+.text-red{
+    color: red;
+}
+
+@media only screen and (max-width : 600px){
+    .grid-container{
+        width: 45vw;
+    }
+    .image{
+        height: 22vw;
+        width: 22vw;
+    }
+}
+@media only screen and (max-width : 420px){
+    .grid-container{
+        width: 55vw;
+    }
+    .image{
+        height: 28vw;
+        width: 28vw;
+    }
+}
