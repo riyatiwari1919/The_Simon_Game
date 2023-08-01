@@ -35,7 +35,7 @@ body{
 .grid-container{
     margin: 90px auto;
     width: 25vw;
-    height: 45vh;
+    /*height: 45vh;*/
     display : grid;
     grid-template-rows  : 1fr 1fr;
     grid-template-columns : 1fr 1fr;
