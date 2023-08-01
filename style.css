@@ -54,6 +54,9 @@ body{
     opacity: 0.9;
     box-shadow: 0 3px 4px 0 white;
 }
+.level-changed{
+    visibility: hidden;
+}
 .done{
     border: 5px solid white;
 }
@@ -63,22 +66,38 @@ body{
 .text-red{
     color: red;
 }
-
-@media only screen and (max-width : 600px){
+@media only screen and (max-width : 780px){
     .grid-container{
         width: 45vw;
     }
+    .image{
+        height: 20vw;
+        width: 20vw;
+    }
+}
+@media only screen and (max-width : 600px){
     .image{
         height: 22vw;
         width: 22vw;
     }
 }
-@media only screen and (max-width : 420px){
+
+@media only screen and (max-width : 480px){
     .grid-container{
         width: 55vw;
     }
     .image{
         height: 28vw;
         width: 28vw;
+    }
+}
+
+@media only screen and (max-width : 400px){
+    .grid-container{
+        width: 65vw;
+    }
+    .image{
+        height: 30vw;
+        width: 30vw;
     }
 }
