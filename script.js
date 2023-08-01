@@ -61,7 +61,7 @@ function checkit(value, name){
         if(score==100 || score==200 || score==300){
             levelChengedAnimation();
             let level = document.querySelector(".heading").innerHTML;
-            document.querySelector(".heading").innerHTML = level + "<br><marquee width='60%' direction='right'>Completed !</marquee>";
+            document.querySelector(".heading").innerHTML = level + "<br><marquee width='90%' direction='right'>Completed !</marquee>";
         }
         if(0<score && score<100){
             document.querySelector(".heading").innerHTML = "Level 1";
